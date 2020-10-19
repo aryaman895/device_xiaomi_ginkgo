@@ -72,4 +72,4 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Fingerprint
 
-BUILD_FINGERPRINT := google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys
+BUILD_FINGERPRINT := google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys
