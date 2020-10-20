@@ -17,10 +17,10 @@
 -->
 <resources>
     <!-- define status bar extra padding -->
-    <dimen name="status_bar_extra_padding">15dp</dimen>
+    <dimen name="status_bar_extra_padding">18dp</dimen>
 
-    <!-- for 22dp of padding at 2.75px/dp at default density -->
-    <dimen name="rounded_corner_content_padding">60px</dimen>
+    <!-- for 12dp of padding at 2.75px/dp at default density -->
+    <dimen name="rounded_corner_content_padding">33px</dimen>
 
     <!-- Padding for the system icons on the keyguard (when no multi user switch is showing).
     The icons always have a 4dp padding in the container so we only need 41 extra px of padding
