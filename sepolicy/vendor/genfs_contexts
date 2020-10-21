@@ -1,6 +1,9 @@
-genfscon sysfs /module/battery_saver/parameters/enabled   u:object_r:sysfs_battery_saver:s0
+genfscon sysfs /module/battery_saver/parameters/enabled        u:object_r:sysfs_battery_saver:s0
 # DT2W
-genfscon proc /tp_gesture                                 u:object_r:proc_touchpanel:s0
+genfscon proc /tp_gesture                                      u:object_r:proc_touchpanel:s0
 
 # USB fastcharge
-genfscon sysfs /kernel/fast_charge/force_fast_charge      u:object_r:sysfs_fcharge:s0
+genfscon sysfs /kernel/fast_charge/force_fast_charge           u:object_r:sysfs_fcharge:s0
+
+# FPS Info
+genfscon sysfs /class/drm/card0/sde-crtc-0/measured_fps        u:object_r:sysfs_fpsinfo:s0
