@@ -144,5 +144,5 @@
 
     <!-- FPS Info -->
     <string name="fps_info_title">Enable FPS Counter</string>
-    <string name="fps_info_summary">Show overlay with with current frames per second</string>
+    <string name="fps_info_summary">Show overlay with current frames per second</string>
 </resources>
