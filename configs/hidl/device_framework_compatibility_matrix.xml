@@ -52,7 +52,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.audio.effect</name>
-        <version>6.0</version>
+        <version>7.0</version>
         <interface>
             <name>IEffectsFactory</name>
             <instance>default</instance>
@@ -60,7 +60,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.audio</name>
-        <version>6.0</version>
+        <version>7.0</version>
         <interface>
             <name>IDevicesFactory</name>
             <instance>default</instance>
