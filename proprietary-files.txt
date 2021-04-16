@@ -1,4 +1,4 @@
-# Device proprietary files - from ginkgo MIUI V12.0.2.0.QCOCNXM package, unless pinned
+# Device proprietary files - from ginkgo MIUI V12.0.4.0.QCOMIXM package, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -188,7 +188,6 @@ vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_dualcam_refocus.so
 vendor/lib/libarcsoft_high_dynamic_range.so
 vendor/lib/libarcsoft_low_light_hdr.so
-vendor/lib/libarcsoft_preview_antibanding.so
 
 # Camera chromatix
 vendor/lib/libchromatix_csidtg_common.so
