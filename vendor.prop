@@ -100,6 +100,10 @@ persist.vendor.radio.report_codec=1
 persist.vendor.ssr.restart_level=ALL_ENABLE
 ro.telephony.default_network=22,22
 
+# SoC
+ro.soc.manufacturer=QTI
+ro.soc.model=SM6125
+
 # Sensors
 persist.vendor.sensors.enable.bypass_worker=true
 persist.vendor.sensors.enable.mag_filter=true
