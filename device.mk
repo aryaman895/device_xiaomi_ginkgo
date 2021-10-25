@@ -127,7 +127,7 @@ PRODUCT_PACKAGES += \
     GinkgoSettingsLib \
     GinkgoSystemUI \
     GinkgoMiuiCamera \
-    NoCutoutOverlay \
+    GinkgoNoCutoutOverlay  \
     NotchBarKiller
 
 # Parts
