@@ -5,6 +5,9 @@ persist.bluetooth.bqr.min_interval_ms=500
 # Blur
 persist.sys.sf.disable_blurs=1
 
+# Camera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
+
 # Charger
 ro.charger.enable_suspend=true
 
