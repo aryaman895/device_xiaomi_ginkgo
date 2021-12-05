@@ -236,6 +236,14 @@ TARGET_NFC_SKU := willow
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.se.type=HCE,UICC
 
+# Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-impl \
+    android.hardware.media.omx@1.0-service
+
+PRODUCT_PACKAGES += \
+    libstagefright_omx.vendor
+
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPAGinkgoFrameworks \
