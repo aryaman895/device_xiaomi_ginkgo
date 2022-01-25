@@ -23,6 +23,7 @@ on post-fs
 
 on boot
     # DT2W
+    chown system system /sys/touchpanel/double_tap
     chmod 0660 /sys/touchpanel/double_tap
 
     # GPU boost
@@ -141,13 +142,6 @@ on property:vendor.post_boot.parsed=1
     # Back to default VM settings
     write /proc/sys/vm/dirty_expire_centisecs 3000
     write /proc/sys/vm/dirty_background_ratio 10
-
-    # Enable idle state listener
-    write /sys/class/drm/card0/device/idle_encoder_mask 1
-    write /sys/class/drm/card0/device/idle_timeout_ms 100
-
-    # Enable PowerHAL hint processing
-    setprop vendor.powerhal.init 1
 
 on charger
     chown system system /sys/class/leds/red/brightness
