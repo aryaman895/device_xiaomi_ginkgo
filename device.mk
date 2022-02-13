@@ -114,7 +114,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.sf.color_saturation=1.1
 
 PRODUCT_VENDOR_PROPERTIES += \
-    debug.sf.disable_backpressure=1 \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.latch_unsignaled=1 \
     ro.vendor.display.sensortype=2 \
