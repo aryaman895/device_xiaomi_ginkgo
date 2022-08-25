@@ -115,7 +115,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.disable_backpressure=1 \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.latch_unsignaled=1 \
-    ro.surface_flinger.use_color_management=1 \
     ro.vendor.display.sensortype=2 \
     ro.vendor.display.svi=1 \
     vendor.display.svi.config=1 \
@@ -124,6 +123,9 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.lcd.cabc_mode=1 \
     persist.lcd.hbm_mode=0
+
+PRODUCT_ODM_PROPERTIES += \
+    ro.surface_flinger.use_color_management=1
 
 # Doze
 PRODUCT_PACKAGES += \
