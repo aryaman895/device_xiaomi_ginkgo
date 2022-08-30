@@ -139,7 +139,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.sensor.pickup=xiaomi.sensor.pickup
 
 # DPM
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpmhalservice.enable=1
 
 # DRM
@@ -283,7 +283,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.telephony.default_network=22,22
 
 # SoC
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=QTI \
     ro.soc.model=SM6125
 
