@@ -10,3 +10,6 @@ type sysfs_touchpanel, fs_type, sysfs_type;
 type kcal_dev, sysfs_type, fs_type;
 type vibrator_dev, sysfs_type, fs_type;
 type per_boot_file, file_type, data_file_type, core_data_file_type;
+
+# /proc/last_kmsg
+type proc_last_kmsg, fs_type, proc_type;
