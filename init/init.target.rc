@@ -73,11 +73,6 @@ on late-fs
     exec_start wait_for_keymaster
     mount_all /vendor/etc/fstab.qcom --late
 
-service sec_nvm /vendor/bin/sec_nvm
-    class core
-    user system
-    group system
-
 on post-fs-data
     mkdir /data/vendor/touchpad 0775 system system
     mkdir /data/vendor/hbtp 0750 system system
@@ -155,12 +150,6 @@ service vendor.per_proxy /vendor/bin/pm-proxy
     group system
     disabled
 
-service checknv /system/bin/checknv
-    class late_start
-    user root
-    oneshot
-    seclabel u:r:recovery:s0
-
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
 
@@ -207,11 +196,6 @@ on property:sys.boot_completed=1
     mkdir /data/vendor/charge_logger 0771 system system
     start charge_logger
 
-service spdaemon /vendor/bin/spdaemon
-    class core
-    user system
-    group system
-
 service thermal-engine /system/vendor/bin/thermal-engine
    class main
    user root
@@ -240,22 +224,6 @@ service hbtp /system/vendor/bin/hbtp_daemon
      user system
      group system
      disabled
-
-service qfp-daemon /vendor/bin/qfp-daemon
-    class late_start
-    user system
-    group system drmrpc diag input
-
-service energy-awareness /system/vendor/bin/energy-awareness
-    class main
-    user system
-    group system
-    oneshot
-
-service smcinvoked /system/bin/smcinvoked
-    class main
-    user system
-    group system
 
 service tinyhostless_loop /system/bin/tinyhostless -D 0 -P 35 -C 36 -p 256 -n 2 -c 1 -r 48000
     user root
