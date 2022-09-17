@@ -18,7 +18,6 @@ on post-fs
     start surfaceflinger
     start bootanim
     start vendor.hwcomposer-2-4
-    start vendor.configstore-hal
     start vendor.qti.hardware.display.allocator
 
 on property:init.svc.vendor.hwcomposer-2-4=stopped
