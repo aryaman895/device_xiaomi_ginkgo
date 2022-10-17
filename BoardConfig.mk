@@ -99,6 +99,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Power
 TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 
+# Power HAL
+TARGET_PROVIDES_POWERHAL := true
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
@@ -121,6 +124,9 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # Vendor SPL
 VENDOR_SECURITY_PATCH := 2022-07-01
+
+# Inherit from ReloadedOS configuration
+include vendor/reloaded/config/BoardConfigReloaded.mk
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/ginkgo/BoardConfigVendor.mk
